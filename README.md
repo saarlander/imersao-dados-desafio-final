@@ -8,7 +8,7 @@ A busca de novas drogas para o combate de doenças tem cada vez mais aplicado t�
 
 O objetivo do presente estudo é mostrar a aplicação de Machine Learning à avaliação da expressão gênica de centenas de genes, resultantes de testes em laboratório, e obter um veredicto se um determinado experimento envolvendo um determinado composto, dose e tempo de atuação é capaz de produzir um determinado método de ativação.
 
-O resultado do estudo foi a demonstração da viabilidade da técnica proposta, atingindo uma precisão da ordem de 98% na predição do método de ativação observado.
+O resultado do estudo foi a demonstração da viabilidade da técnica proposta, atingindo uma precisão de 98,175% na predição do método de ativação observado.
 
 ## Método
 
@@ -38,25 +38,40 @@ Dessa maneira, temos como entrada as condições do experimento: qual composto f
 
 Na tabela com os resultados dos mecanismos de ativação, esses resultados foram verificados manualmente. Através da aplicação de Machine Learning, pode ser possível determinar o mecanismo de ativação dada a expressão gênica do experimento, possibilitando uma maior velocidade na análise dos dados dos experimentos e, consequentemente, uma maior rapidez na obtenção de novos medicamentos.
 
-### Mecanismos de ativação escolhido para análise: cyclooxygenase_inhibitor
+## Mecanismo de ativação escolhido para análise: cyclooxygenase_inhibitor
 
 A tabela com os mecanismos de ativação possui 206 colunas com diferentes mecanismos (mais uma coluna com identificação do experimento). O objetivo aqui é relacionar um desses métodos de ativação com as expressões gênicas. O mecanismo escolhido para esse estudo foi o "cyclooxygenase_inhibitor" porque:
 - Possui uma frequência alta de ocorrência (435 ocorrências nos 23814 experimentos, sendo o terceiro mecanismo com maior ocorrência, e
 - Possui grande relevância farmacêutica, pois a inibição da cyclooxygenase (COX) pode causar o alívio dos sintomas de inflamação e de dor.
 
-Drogas anti-inflamatórias não-esteróides, tais como aspirina e ibuprofeno, agem através da inibição da COX.
+**Drogas anti-inflamatórias não-esteróides, tais como aspirina e ibuprofeno, agem através da inibição da COX.**
 
+## Algoritmo de Machine Learning escolhido
 
+Seguindo as instruções na página "Choosing the right estimator", o algoritmo "Linear SVC" pode ser o melhor para o estudo, porque:
+- Há mais de 50 amostras
+- O objetivo é prever uma categoria (inibe ou não a COX)
+- Temos dados etiquetados (com resultados)
+- A quantidade de amostras é inferior a 100k (são 23814).
 
+<img src="https://scikit-learn.org/stable/_static/ml_map.png">
 
+# Resultado
+
+O modelo, após ajustes em seus parâmetros, atingiu 98,175% de score quando testado com uma porcentagem de 20% dos dados da base.
+Acreditamos que esse valor seja encorajador para novas pesquisas e aplicação da técnica no desenvolvimento de novas drogas.
+
+## Sugestões para novas pesquisas
+
+O presente estudo avaliou apenas um mecanismo de ação. Um estudo mais aprofundado poderia configurar uma Machine Learning para cada mecanismo de ação, e poderia-se verificar o comportamento do score global.
 
 
 
 ### Fontes:
-https://en.wikipedia.org/wiki/Cyclooxygenase
-https://en.wikipedia.org/wiki/Gene_expression
-Drug discovery: passado, presente e futuro
-https://pixabay.com/illustrations/dna-biology-science-dna-helix-163710/
-https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html
-https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
-
+- https://en.wikipedia.org/wiki/Cyclooxygenase
+- https://en.wikipedia.org/wiki/Gene_expression
+- https://docs.google.com/document/d/10EhrQBChlyYIcff3to7PrCQi5HcNk2r-zd2ZCKPtcz8/edit
+- https://pixabay.com/illustrations/dna-biology-science-dna-helix-163710/
+- https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html
+- https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html
+- Introduction to machine learning with Python
