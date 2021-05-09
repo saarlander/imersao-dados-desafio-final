@@ -3,6 +3,9 @@
 
 **Olá Cientistas!**
 
+Sobre Cyclooxygenase:
+https://en.wikipedia.org/wiki/Cyclooxygenase
+
 Neste repositório você vai encontrar todas as informações necessárias para o desenvolvimento do projeto final da Imersão Dados.
 
 O nosso objetivo é que você construa um projeto de Data Science com análise exploratória e desenvolva um modelo de machine learning para auxiliar na descoberta de novos medicamentos, aplicando todo o conhecimento que você irá adquirir na imersão e criando um projeto incrível no github, deixando-o com a sua cara. 
