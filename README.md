@@ -63,7 +63,8 @@ Acreditamos que esse valor seja encorajador para novas pesquisas e aplicação d
 
 ## Sugestões para novas pesquisas
 
-O presente estudo avaliou apenas um mecanismo de ação. Um estudo mais aprofundado poderia configurar uma Machine Learning para cada mecanismo de ação, e poderia-se verificar o comportamento do score global.
+O presente estudo avaliou apenas um mecanismo de ação. Um estudo mais aprofundado poderia configurar uma Machine Learning para cada mecanismo de ação, e poderia-se verificar o comportamento do score global, ou seja, dada a expressão gênica causada por um experimento, é possível determinar com precisão todos os mecanismos de ação?
+Também é possível fazer o caminho inverso: dado o mecanismo de ação desejado, quais são as expressões gênicas envolvidas? Ao final deste estudo foi realizada uma verificação superficial nesse sentido, onde verificamos a colaboração das expressões de 20 dos genes no resultado, através da avaliação dos coeficientes do modelo de Machine Learning adotado.
 
 
 
