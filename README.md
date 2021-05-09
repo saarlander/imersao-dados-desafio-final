@@ -14,12 +14,12 @@ O resultado do estudo foi a demonstração da viabilidade da técnica proposta, 
 
 O método aplicado resume-se às seguintes etapas básicas:
 
-**Importação da base de dados**
-**Verificação do formato da base de dados**
-**Organização da base de dados**
-**Determinação do algoritmo de Machine Learning a ser aplicado**
-**Aplicação do algoritmo de Machine Learning e refinamento**
-**Análise dos resultados**
+- **Importação da base de dados**
+- **Verificação do formato da base de dados**
+- **Organização da base de dados**
+- **Determinação do algoritmo de Machine Learning a ser aplicado**
+- **Aplicação do algoritmo de Machine Learning e refinamento**
+- **Análise dos resultados**
 
 ## Base de dados
 
